@@ -21,7 +21,7 @@ public class SecurityConfig{
         return httpSecurity
                 .authorizeRequests()
                     .antMatchers(HttpMethod.OPTIONS).permitAll()
-                    .antMatchers(HttpMethod.PATCH, "/api/ingredients").permitAll()
+                    .antMatchers(HttpMethod.tacoOrder, "/api/ingredients").permitAll()
                     .antMatchers("/design", "/orders").access("hasRole('USER')")
                     .antMatchers("/", "/**").access("permitAll()")
 

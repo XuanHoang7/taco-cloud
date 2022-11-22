@@ -6,10 +6,10 @@
 		<module>taco-cloud-domain</module>
 		<module>taco-cloud-persistence</module>
         <module>taco-cloud-security</module>
-        <module>taco-angular-ui</module>
 		<module>taco-cloud-api</module>
 		<module>taco</module>
 	</modules>
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>

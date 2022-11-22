@@ -2,10 +2,7 @@ package xhoang.tacos;
 import java.util.Arrays;
 import java.util.Collection;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.
@@ -21,6 +18,7 @@ import lombok.RequiredArgsConstructor;
 @Data
 @NoArgsConstructor(access=AccessLevel.PRIVATE, force=true)
 @RequiredArgsConstructor
+@Table(name = "users")
 public class User implements UserDetails {
 
   private static final long serialVersionUID = 1L;
